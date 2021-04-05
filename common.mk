@@ -373,6 +373,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
