@@ -242,6 +242,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.kona.post_boot.sh \
     init.oplus.rc \
+    init.device_extras.rc \
     init.oplus.sh \
     init.oplus.touch.rc \
     init.qcom.early_boot.sh \
@@ -336,6 +337,10 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libstagefrighthw
 
+# DeviceExtras
+PRODUCT_PACKAGES += \
+    DeviceExtras
+
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
@@ -346,6 +351,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
     OPlusCarrierConfigResCommon \
+    DeviceExtrasResCommon \
     OPlusFrameworksResCommon \
     OPlusNfcResCommon \
     OPlusSettingsResCommon \
