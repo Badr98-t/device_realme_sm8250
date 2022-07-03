@@ -264,6 +264,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.kona.post_boot.sh \
     init.oplus.rc \
+    init.device_extras.rc \
     init.oplus.sh \
     init.oplus.touch.rc \
     init.qcom.early_boot.sh \
@@ -348,6 +349,11 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libstagefrighthw
 
+# DeviceExtras
+PRODUCT_PACKAGES += \
+    DeviceExtras \
+    tri-state-key-calibrate
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
@@ -356,6 +362,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
     OPlusCarrierConfigResCommon \
+    DeviceExtrasResCommon \
     OPlusFrameworksResCommon \
     OPlusNfcResCommon \
     OPlusSettingsResCommon \
