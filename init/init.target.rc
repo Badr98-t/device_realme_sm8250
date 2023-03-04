@@ -220,3 +220,13 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
 
 on property:vendor.dcvs.prop=1
    start dcvs-sh
+
+service kona-post-boot /vendor/bin/init.kona.post_boot.sh
+    class late_start
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
+
+on property:vendor.post_boot.parsed=1
+    start kona-post-boot

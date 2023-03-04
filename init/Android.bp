@@ -85,6 +85,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.kona.post_boot.sh",
+    src: "init.kona.post_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.post_boot.sh",
     src: "init.qcom.post_boot.sh",
     vendor: true,
