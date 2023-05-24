@@ -164,9 +164,6 @@ vendor.media.vpp.sr.enable=0
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=true
 
-# Qualcomm System Daemon
-persist.vendor.qcomsysd.enabled=1
-
 # Radio
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
