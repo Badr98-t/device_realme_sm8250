@@ -547,7 +547,11 @@
     <integer name="config_defaultRefreshRate">0</integer>
 
      <!-- Set the value for screen brightness while in Doze state. -->
-     <integer name="config_screenBrightnessDoze">45</integer>
+     <integer name="config_screenBrightnessDoze">17</integer>
+     
+    <!-- If true, the doze component is not started until after the screen has been
+         turned off and the screen off animation has been performed. -->
+     <bool name="config_dozeAfterScreenOff">true</bool>
 
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
