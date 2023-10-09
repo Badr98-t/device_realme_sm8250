@@ -31,4 +31,6 @@ void set_variant_props(const variant_info_t variant) {
     set_ro_build_prop("model", variant.model, true);
     set_ro_build_prop("name", variant.name, true);
     property_override(SKU_PROP, variant.sku, true);
+    property_override("ro.rising.chipset", "Snapdragon 870 5G");
+    property_override("ro.rising.maintainer", "Badr98-t");
 }
