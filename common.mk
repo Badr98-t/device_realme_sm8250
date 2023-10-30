@@ -159,6 +159,9 @@ PRODUCT_COPY_FILES += \
 # Charateristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Dolby 
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Display
 TARGET_DISABLE_MEMTRACK := true
 
