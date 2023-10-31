@@ -99,9 +99,6 @@
     A blocked BSSID will not be considered in network selection and firmware roaming.-->
     <integer name="config_wifiBssidBlocklistMonitorWrongPasswordThreshold">3</integer>
 
-    <!-- The duration in minutes to strongly favor the last-selected network over other options. -->
-    <integer name="config_wifiFrameworkLastSelectionMinutes">0</integer>
-
     <!-- Integer duration after connection that a user-selected network is considered sufficient (milliseconds) -->
     <integer name="config_wifiSufficientDurationAfterUserSelectionMilliseconds">0</integer>
 
