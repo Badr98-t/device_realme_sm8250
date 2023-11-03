@@ -28,7 +28,6 @@ COMMON_PATH := device/realme/sm8250-common
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
-NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
 BUILD_BROKEN_CLANG_PROPERTY := true
 
@@ -208,7 +207,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # SELinux
 SELINUX_IGNORE_NEVERALLOWS := true
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
 
 # Verified boot
